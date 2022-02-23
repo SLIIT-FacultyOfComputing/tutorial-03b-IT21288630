@@ -9,11 +9,11 @@ int main()
  char names[][20] = {"Ajith", "Wimal", "Kanthi", "Suranji", "Kushmitha"};
 
   //printing the output
- cout << "No\t" << "Name\t\t" << "Marks" << endl;
+ cout << "No\t\t\t" << "Name\t" << " Marks" << endl;
   
  for (int r = 0; r < 5; r++) 
  {
-     cout <<  r+1 << "\t" << names[r]  << "\t\t" << setiosflags(ios::fixed) << setprecision(2) << marks[r] << endl;
+     cout <<  r+1 << setw(15) << names[r] << setiosflags(ios::fixed) << setprecision(2) << setw(10) << marks[r] << endl;
  }
 
   return 0;
